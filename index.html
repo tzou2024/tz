@@ -6,6 +6,14 @@
 -->
 <html>
 	<head>
+
+		<script src="jquery.js"></script> 
+		<script> 
+		$(function(){
+			$("#includedContent").load("b.html"); 
+		});
+		</script> 
+		
 		<title>Trevor Zou</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -17,6 +25,7 @@
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
+					<div id="includedContent"></div>
 					<nav>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
@@ -35,6 +44,7 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Hi! I'm Trevor Zou.</h1>
+
 							<p>I'm a student  studying Computer Engineering at Olin College of Engineering. I'm passionate about civic technology, machine learning, and datascience.</p>
 							<p> (This site is a work in progress.)</p>
 							<ul class="actions">
@@ -42,11 +52,11 @@
 							</ul>
 						</div>
 					</section>
-
+					
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/09.png" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/dronepic.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>PInT Summer Felllow</h2>
@@ -55,27 +65,31 @@
 										Learned how to actively contribute to a project despite lack of resource documentation and background experience, learned how to virtually communicate effectively while working from home.
 									</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="https://www.pint.olin.edu/fellowship-about" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/09.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Public Interest Technology (PInT) Project Team</h2>
-									<p>I am an organizer on Olin's Public Interest Technology project team, which Our goal is to give students a unique hands-on opportunity to engage with the social impact of technology while developing valuable technical skills by working on long-term projects with nonprofits, learning from established public interest technologists, and engaging in deep reflection.  
-									I am currently on a subteam focusing on highliting the lack of regulation over and racial disparities within the EPA database.
+									<p>I am an organizer on Olin's Public Interest Technology project team, which Our goal is to give 
+										students a unique hands-on opportunity to engage with the social impact of technology while developing 
+										valuable technical skills by working on long-term projects with nonprofits, learning from established public 
+										interest technologists, and engaging in deep reflection. Responsbilities include scoping projects, and planning/hosting events,
+										inviting guest speakers, and developing skillshares.
+										
 									</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="https://www.pint.olin.edu/about-us" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="images/reach4help.png" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Developement Lead, Reach4Help</h2>
@@ -84,22 +98,40 @@
 										cleaned and synced data across web-storage spaces, including Airtable, Firestore, and Algolia. One of the more fun projects was
 										 compiling and analyzing social media trends and language to create real-time location-specific crisis and resource demand maps.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="https://reach4help.org/" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<a href="#" class="image"><img src="images/edgi.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Volunteer, EDGi</h2>
+									<p> Currently working with the Environmental
+										Data and Governance Intiative (EDGi) to develope web tools for community analysis of available federal data on compliance 
+										with and enforcement of environmental laws based on the Environmental Protection Agency’s (EPA) ECHO database. We analyze and develop 
+										visualizations of some of the massive errors and gaps in data in this federal database. We plan on develop these into a white paper and 
+										blog posts for the EPA so that they can improve their data systems..</p>
+									<ul class="actions">
+										<li><a href="https://colab.research.google.com/drive/1UY7XKbKMt3aG5j-MGR2b_IhTmV4qqC88?usp=sharing/" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/olin.png" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Course Assistant, Olin College</h2>
 									<p>I am passionate about peer-supported learning and project-based education, and have loved being able to guide other students as a course assistant.
 									I am a CA for Quantitative Engineering Analysis (QEA), a class teaching calculus, linear algebra, and dynamics, as well as Modeling and Simuation of the Physical World (ModSim),
-									where students learn the basics of modeling physical systems and ordinary differential equations.									</p>
+									where students learn the basics of modeling physical systems and ordinary differential equations.	
+								<!--							</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
+									-->	
 								</div>
 							</div>
 						</section>
@@ -130,9 +162,9 @@
 									<p>Basic Arduino / Python scanning mechanism using IR distance sensors and servos.</p>
 								</section>
 								<section>
-									<span class="icon solid major fa-music"></span>
-									<h3>Paper Piano</h3>
-									<p>Arduino Digital Piano- drawn on paper and using capacitive sensors.</p>
+									<span class="icon solid major fa-code"></span>
+									<h3>PPO A3C Reinforcement Learning</h3>
+									<p>Solved BiPedal Walker Environement from GYM using Asynchronous Actor Critic Model with Proximal Policy Optimization</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-code"></span>
